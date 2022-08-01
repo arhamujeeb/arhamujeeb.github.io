@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+
+
+nav a {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+nav a:hover {
+    transition: 0.5s ease;
+    background-color: #979797;
+    color: white;
+}
+
+#home {
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 180px 0;
+}
+
+.home {
+    max-width: 100%;
+}
+
+.left {
+    width: 50%;
+    float: right;
+    padding: 180px 0 0 50px;
+
+}
+
+.left h2,
+p,
+button {
+    margin: 8px;
+}
+
+.btn {
+    background-color: violet;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 1px solid violet;
+}
+
+.btn:hover {
+    transition: 0.5s ease;
+    background-color: #f6ecff;
+    color: violet;
+}
+
+.right {
+    width: 50%;
+    padding: 130px 0 0 0;
+    float: left;
+}
+
+.right img {
+    height: 250px;
+    width: 400px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+
+#about {
+    height: 100%;
+    max-width: 100%;
+    padding-top: 90px;
+    background-color: rgb(246, 236, 255);
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.about {
+    padding: 20px 0 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.one,
+.two,
+.three {
+    margin: 10px;
+    background-color: white;
+    border: none;
+    width: 25%;
+    height: 60%;
+    padding: 0 15px 20px 15px;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+}
+
+.one {
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.two {
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+
+.three {
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.about p {
+    padding: 0 89px;
+    color: grey;
+}
+
+.profilepic {
+    border: 10px solid white;
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+}
+
+:where(.one, .two, .three, ):hover {
+    transition: 0.5s ease;
+    background-color: #edd7ff;
+    color: violet;
+}
+
+#contact {
+    height: 100%;
+    max-width: 100%;
+    padding: 90px 0 150px 0;
+}
+
+#contact h2 {
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 50%;
+    display: block;
+    margin: 10px;
+    background-color: #f6ecff;
+    border: none;
+    padding: 20px 20px 30px 20px;
+    border-radius: 5px;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+
+#email {
+    margin: 5px;
+    padding: 25px;
+    height: 30px;
+    width: 95%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: black;
+    box-shadow: rgb(231, 231, 231) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+#message {
+    margin: 5px;
+    padding: 10px;
+    height: 50%;
+    width: 95%;
+    resize: none;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgb(231, 231, 231) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+#submit {
+    margin: 5px;
+    width: 95%;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: #eeeeee;
+    width: 100%;
+    padding: 15px 0;
+}
