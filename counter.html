@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Counter</title>
+        <link rel="icon" href="count.ico">
+        <style>
+            body{
+    background-color: #cca4ff;
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+.align{
+    justify-content: center;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+}
+
+.container{
+    text-align: center;
+    background-color: #bf8eff;
+    padding: 20px 50px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 50px;
+    color: aliceblue;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+button{
+    padding: 5px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #bf8eff;
+}
+
+button:active{
+    background-color: #cca4ff;
+}
+        </style>
+        <script>
+           let counter = 0;
+            function count(){
+                counter++;
+                document.querySelector('h1').innerHTML = counter;
+                if (counter % 10 === 0) {
+                    alert(`Count is now ${counter}`);
+                }
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('button').onclick = count;
+            });
+
+            function decount() {
+                if (counter === 0) {
+                    counter++;
+                }
+                counter--;
+                document.querySelector('h1').innerHTML = counter;
+                
+            }
+            
+            function reset() {
+                
+                
+                document.querySelector('h1').innerHTML = counter = 0;
+               
+            }
+        </script>
+    </head>
+    <body>
+        <div class="align">
+        <div class="container">
+        <h1>
+           0
+        </h1>
+        <button>
+            +
+        </button>
+        <button onclick="decount()"> - </button>
+        <button onclick="reset()">reset </button>
+        </div>
+        </div>
+    </body>
+</html>
